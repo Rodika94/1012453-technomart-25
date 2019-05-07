@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Родика Давлетшина](https://up.htmlacademy.ru/htmlcss/25/user/1012453).
-* Наставник: [Алексей Бервяченок](https://htmlacademy.ru/htmlcss/25/user/151813).
+* Наставник: [Алексей Бервяченок](https://htmlacademy.ru/profile/jackson).
 
 ---
 
