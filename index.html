@@ -28,30 +28,12 @@
 				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 			</div>
 		</div>
-
-		<form class="user" method="post" action="https://echo.htmlacademy.ru">
-			<p>
-				<label for="user-login">Логин</label>
-				<input id="user-login" type="text" name="login" placeholder="Логин">
-			</p>
-			<p>
-				<label for="user-password">Пароль</label>
-				<input id="user-password" type="password" name="password" placeholder="Пароль">
-			</p>
-			<p>
-				<label>
-					<input type="checkbox" name="remember">
-					Запомните меня
-				</label>
-			</p>
-			<button class="login-link" type="submit">Войти</button>
-		</form>			
-				
-			<button class="registry-link" href="registry-link.html">Регистрация</button>
-				
+			
+		<div class="user-login">	
+			<a class="user-cabinet" href="user-cabinet.html">Войти</a>
+			<a class="registry-link" href="registry-link.html">Регистрация</a>
+		</div>
 		
-		
-
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li><a href="info.html">Компания</a></li>
@@ -94,25 +76,6 @@
 			<img src="" width="" height="" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 			<a class="button" href="support.html">заблудились? напишите нам!</a>	
 		</section>
-
-		<!-- попытка попапа -->
-
-		<form class="b-popup" method="post" action="https://echo.htmlacademy.ru">
-			<p class="b-popup-content">
-				<label for="name-for-help">Ваше имя:</label>
-				<input id="name-for-help" type="text" name="name" placeholder="Имя Фамилия">
-			</p>
-			<p class="b-popup-content">
-				<label for="email-for-help">Ваш e-mail:</label>
-				<input id="email-for-help" type="email" name="e-mail" placeholder="e-mail@example.com"></input>
-			</p>
-			<p class="b-popup-content">
-				<label for="text-for-help">Текст письма:</label>
-				<textarea id="text-for-help" type="text" name="text" placeholder="В свободной форме"></textarea>
-			</p>
-			<button class="send-link" type="submit" >Отправить</button>
-		</form>	
-
 	</main>
 
 	<footer class="main-footer">
@@ -170,5 +133,25 @@
 			</p>
 		</section>	
 	</footer>
+	
+	<!-- попытка попапа -->
+	<form class="b-popup" method="post" action="https://echo.htmlacademy.ru">
+		<p class="b-popup-content">
+			<label for="name-for-help">Ваше имя:</label>
+			<input id="name-for-help" type="text" name="name" placeholder="Имя Фамилия">
+		</p>
+		<p class="b-popup-content">
+			<label for="email-for-help">Ваш e-mail:</label>
+			<input id="email-for-help" type="email" name="e-mail" placeholder="e-mail@example.com"></input>
+		</p>
+		<p class="b-popup-content">
+			<label for="text-for-help">Текст письма:</label>
+			<textarea id="text-for-help" type="text" name="text" placeholder="В свободной форме"></textarea>
+		</p>
+		<div class="modal">
+			<button class="send-link" type="submit" >Отправить</button>
+		</div>
+	</form>	
+
 </body>
 </html>
