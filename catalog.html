@@ -3,9 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="inner-page">
 	<header class="main-header">
 		<div class="search-marker-basket">
 			<a class="main-navigation-logo"><img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип Техномарт"></a>
@@ -13,7 +16,7 @@
 			<ul class="site-search-navigation">  		      	 
 				<li><a href="marker.html">Закладки</a></li>
 				<li><a href="basket.html">Корзина</a></li>
-				<li><a class="button" href="checkout.html">Оформить заказ</a></li>
+				<li><a class="button-ckeckout" href="checkout.html">Оформить заказ</a></li>
 			</ul>
 		</div> 
 
@@ -35,9 +38,9 @@
 				<a href="logout.html" class="button"></a>
 			</p>
 
-			<ul>
-				<li><a href="user-orders.html">Мои заказы</a></li>
-				<li><a href="private-office.html">Личный кабинет</a></li>
+			<ul class="user">
+				<li><a class="user-orders" href="user-orders.html">Мои заказы</a></li>
+				<li><a class="private-office" href="private-office.html">Личный кабинет</a></li>
 			</ul>
 		</div>
 
@@ -52,6 +55,7 @@
 				<li><a href="contact.html">Контакты</a></li>
 			</ul>
 		</nav>  
+	</header>
 
 	<main class="container">
 		<ul class="breadcrumbs">
@@ -62,15 +66,6 @@
 		</ul>
 			<!-- попытка всплывающего окна -->
 		<h2 class="page-title">Перфораторы</h2>
-
-		<div class="order-check">
-			<p>
-				Товар добавлен в корзину!
-			</p>
-			
-			<a class="button" href="checkout.html">Оформить заказ</a>
-			<button class="modal-close" type="button">Продолжить покупки</button>
-		</div>
 
 		<form class="filters" method="post" action="https://echo.htmlacademy.ru">
 			<fieldset class="manufacturers">
@@ -318,6 +313,7 @@
 				<li class="pagination-item"><a href="#">Следующая</a></li>
 			</ul>
 		</section>
+
 	</main>
 
 	<footer class="main-footer">
@@ -332,7 +328,7 @@
 
 
 			<div class="block-footer-right">	 		    
-				<ul class="site-navigation">
+				<ul class="site-navigation-footer">
 					<li><a href="info.html">Компания</a></li>
 					<li><a href="news.html">Новости</a></li>
 					<li><a href="catalog.html">Каталог</a></li>
@@ -342,7 +338,7 @@
 			</div>
 
 			<div>
-				<ul class="main-navigation">
+				<ul class="main-navigation-footer">
 					<li><a href="material.html">Материалы</a></li>
 					<li><a href="mechanism.html">Техника</a></li>
 					<li><a href="tool.html">Инструмент</a></li>
