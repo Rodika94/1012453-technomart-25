@@ -28,6 +28,8 @@ a {
 h1 {
   font-size: 16px;
   line-height: 23px;
+  font-style: italic;
+  font-weight: normal;
   color: #ee3643;
 }
 
@@ -35,6 +37,10 @@ h2,
 .manufacturers,
 .breadcrumbs {
   text-transform: uppercase;
+}
+
+.main-navigation-logo img {
+  background-color: #ee3643;
 }
 
 .site-search-navigation,
@@ -68,7 +74,6 @@ h2,
 }
 
 .site-search-navigation a {
-  font-weight: 600;
   color: #ffffff;
 }
 
@@ -89,7 +94,6 @@ h2,
 
 .address {
   font-size: 14px;
-  font-weight: 600;
   line-height: 24px;
   color: #32425c;   
 }
@@ -472,6 +476,10 @@ a.user-cabinet:hover,
 a.user-cabinet:focus,
 a.user-cabinet:active {
   color: #ee3643;
+}
+
+.footer-contacts {
+  font-style: normal;
 }
 
 .footer-social {
