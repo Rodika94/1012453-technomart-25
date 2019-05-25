@@ -1,19 +1,10 @@
-@font-face {
-  font-family: "Cuprum";
-  src: url("../fonts/web/cuprum.woff2") format("woff2"), url("../fonts/web/cuprum.woff") format("woff");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/web/ptsans.woff2") format("woff2"), url("../fonts/web/ptsans.woff") format("woff");
-}
-
 body {
   width: 1200px;
   padding: auto;
   margin: 0 auto;
 
-  font-family: "PT Sans", "Cuprum", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
@@ -25,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+.h1 {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -33,13 +24,24 @@ h1 {
   color: #ee3643;
 }
 
-h2,
+.h2,
 .manufacturers,
-.breadcrumbs {
+.breadcrumbs,
+.supply,
+.page-title {
   text-transform: uppercase;
 }
 
+.h2,
+.partnnership-list,
+.main-footer-top,
+.button {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
 .main-navigation-logo img {
+  padding: 13px 56px;
+  padding-bottom: 16px;
   background-color: #ee3643;
 }
 
@@ -79,14 +81,14 @@ h2,
 
 .exposition {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 23px;
   color: #ee3643;
 }
 
 .tel a {
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 21px;
   color: #ee3643;
   border: 2px solid #ffffff;  
@@ -99,8 +101,11 @@ h2,
 }
 
 .login-info {
+  padding: 14px 48px;
+  padding-bottom: 16px;
+  padding-right: 69px;
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
@@ -108,16 +113,26 @@ h2,
 
 a.user-orders {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 18px;
   color: #32425c;
 }
 
 a.private-office {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 18px;
   color: #32425c;
+}
+
+.user-cabinet a {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.registry-link a {
+  font-size: 21px;
+  line-height: 21px;
 }
 
 /* строка с поиском и карзиной и копирайты */
@@ -136,9 +151,43 @@ a.private-office {
   background-color: #32425c;
 }
 
+a.registry-link {
+  padding: 14px 26px;
+  padding-bottom: 16px;
+  font: inherit;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: none;
+} 
+
+a.registry-link:hover,
+a.registry-link:focus,
+a.user-cabinet:hover,
+a.user-cabinet:focus{
+  color: #ee3643;
+}
+
+span.login-info:active,
+a.registry-link:active,
+a.user-cabinet:active {
+  color: #b2b2b2;
+}
+
 .site-search-navigation a:hover,
 .site-search-navigation a:focus {
   background-color: #212a3a;
+}
+
+.site-search-navigation a:active {
+  background-color: #161d29;
+}
+
+.site-navigation{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
 }
 
 .site-navigation a:hover,
@@ -146,9 +195,26 @@ a.private-office {
   background-color: #293449;
 }
 
+.site-navigation a:active {
+  background-color: #1d2739;
+}
+
 .footer-social a:hover,
-.footer-social a:focus {
+.footer-social a:focus,
+.footer-social a:active {
   background-color: #ee3643;
+}
+
+a.user-orders:hover,
+a.user-orders:focus,
+a.private-office:hover,
+a.private-office:focus {
+  color: #ee3643;
+}
+
+a.user-orders:active,
+a.private-office:active {
+  color: #b2b2b2;
 }
 
 .site-navigation-footer a:hover,
@@ -158,8 +224,24 @@ a.private-office {
 .footer-support a:hover,
 .footer-support a:focus,
 .footer-copyright a:hover,
-.footer-copyright a:focus {
+.footer-copyright a:focus,
+.user {
   text-decoration: underline;
+}
+
+.site-navigation-footer a:active {
+  color: #929caa;
+}
+.main-navigation-footer a:active {
+  color: #998a6e;
+}
+
+.footer-support a:active {
+  color: #ee3643;
+}
+
+.footer-copyright a:active {
+  color: #ee3643;
 }
 
 .partnnership-list {
@@ -180,6 +262,8 @@ a.private-office {
 .page-title {
   font-size: 30px;
   line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
 }
 
 .breadcrumbs {
@@ -298,6 +382,8 @@ a.private-office {
 }
 
 .price {
+  padding: 13px 36px;
+  padding-right: 40px;
   font-size: 18px;
   line-height: 20px;
   color: #ffffff;
@@ -340,28 +426,28 @@ a.private-office {
 
 .about-company h2 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 30px;
   color: #000000;
 }
 
 .about-company li {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 20px;
   color: #000000;
 }
 
 .about-company p {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 24px;
   color: #000000;
 }
 
 .about-company a {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 18px;
   color: #000000;
 
@@ -375,14 +461,14 @@ a.private-office {
 
 .map h2 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 30px;
   color: #000000;
 }
 
 .map p {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 24px;
   color: #000000;
 }
@@ -397,19 +483,34 @@ a.private-office {
 
 .b-popup {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 18px;
   color: #000000;
 }
 
- button.send-link{
+a.button{
+  padding: 14px 29px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border: none;
+}
+
+a.button-support{
+  padding: 14px 50px;
+}
+
+button.send-link{
   font: inherit;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 18px;
   text-align: center;
   vertical-align: middle;
-  color: #000000;
+  color: #ffffff;
   background-color: #ee3643;
   border: none;
 }
@@ -417,7 +518,7 @@ a.private-office {
 .b-popup-content input {
   font: inherit;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 18px;
 
   background-color: transparent;
@@ -426,6 +527,8 @@ a.private-office {
 
 /* кнопки*/
 a.button-ckeckout {
+  padding: 14px 22px;
+  padding-bottom: 16px;
   font: inherit;
   text-align: center;
   color: #ffffff;
@@ -435,13 +538,18 @@ a.button-ckeckout {
 }
 
 a.button-ckeckout:hover,
-a.button-ckeckout:focus,
-a.button-ckeckout:active {
+a.button-ckeckout:focus {
   background-color: #5fbb2d;
 }
 
+a.button-ckeckout:active {
+  background-color: #518534;
+}
 
 a.user-cabinet {
+  padding: 14px 20px;
+  padding-left: 49px;
+  padding-bottom: 16px;
   font: inherit;
   text-align: center;
   color: #000000;
@@ -459,24 +567,6 @@ a.user-cabinet {
   position: absolute;
   left: 50%;
 }*/
-
-a.registry-link {
-  font: inherit;
-  text-align: center;
-  color: #000000;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: none;
-} 
-
-a.registry-link:hover,
-a.registry-link:focus,
-a.registry-link:active,
-a.user-cabinet:hover,
-a.user-cabinet:focus,
-a.user-cabinet:active {
-  color: #ee3643;
-}
 
 .footer-contacts {
   font-style: normal;
@@ -500,4 +590,16 @@ a.user-cabinet:active {
 
 .footer-copyrights p:first-child {
   text-align: left;
+}
+
+.exposition {
+  text-align: left;
+}
+
+.user-login {
+  text-align: right;
+}
+
+.contacts {
+  text-align: center;
 }
