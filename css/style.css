@@ -306,9 +306,10 @@ a.private-office:active {
   color: #ee3643;
 }
 
-.page-title {
+.page-title h2 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   color: #32425c;
   background-color: #f2f6f8;
