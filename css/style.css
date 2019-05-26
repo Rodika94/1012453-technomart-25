@@ -46,6 +46,28 @@ a {
   background-color: #ee3643;
 }
 
+.search {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.search:hover{
+  background-color: #212a3a;
+  color: #ffffff;
+}
+
+
+.search:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.search-submit {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
 .site-search-navigation,
 .site-navigation,
 .main-navigation,
@@ -262,15 +284,12 @@ a.private-office:active {
   list-style: none;
 }
 
-.partnnership-list::before {
+.partnnership-list li::before {
   content: "_";
   position: absolute;
   font-size: 30px;
   font-weight: bold;
   color: #ee3643;
-  column-width: 160px;
-  padding-top: -20px;
-  margin-left: -25px;
 }
 
 .page-title {
@@ -436,7 +455,6 @@ button.find-link {
   line-height: 30px;
   list-style: none;
   color: #000000;
-  border-top:  
 
   background-color: #ffffff;
 }
@@ -613,7 +631,7 @@ a.user-cabinet {
 
 /*a.user-cabinet::before {
   content: "";
-  background-image: url(img/icon-login.svg);
+  background-image: url(../img/icon-login.svg);
   background-size: 20px 17px;
   width: 20px;
   height: 17px;
