@@ -51,7 +51,7 @@ a {
   color: #ffffff;
 }
 
-.search:hover{
+.search:hover {
   background-color: #212a3a;
   color: #ffffff;
 }
@@ -62,10 +62,24 @@ a {
   color: #000000;
 }
 
-.search-submit {
-  position: relative;
-  width: 300px;
-  margin: 0 auto;
+.search::-moz-placeholder { 
+  color: #ffffff; 
+}
+
+.search::-webkit-input-placeholder { 
+  color: #ffffff; 
+}
+
+.search:-ms-input-placeholder { 
+  color: #ffffff; 
+}
+
+.search::-ms-input-placeholder { 
+  color: #ffffff; 
+}
+
+.search::placeholder { 
+  color: #ffffff; 
 }
 
 .site-search-navigation,
@@ -200,7 +214,7 @@ a.registry-link {
 a.registry-link:hover,
 a.registry-link:focus,
 a.user-cabinet:hover,
-a.user-cabinet:focus{
+a.user-cabinet:focus {
   color: #ee3643;
 }
 
@@ -219,7 +233,7 @@ a.user-cabinet:active {
   background-color: #161d29;
 }
 
-.site-navigation{
+.site-navigation {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 17px;
@@ -353,8 +367,7 @@ a.private-office:active {
 button.find-link {
   padding: 14px 38px;
   font: inherit;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 13px;
   line-height: 18px;
   text-align: center;
   vertical-align: middle;
@@ -533,7 +546,7 @@ button.find-link {
   color: #000000;
 }
 
-a.button{
+a.button {
   padding: 14px 29px;
   font-size: 14px;
   line-height: 18px;
@@ -544,11 +557,11 @@ a.button{
   border: none;
 }
 
-a.button-support{
+a.button-support {
   padding: 14px 50px;
 }
 
-button.send-link{
+button.send-link {
   font: inherit;
   font-size: 14px;
   font-weight: 700;
@@ -564,11 +577,10 @@ a.buy-button {
   padding: 14px 42px;
   padding-left: 46px;
   font-size: 14px;
-  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
-  color: #32425c;
+  color: #ffffff;
   background-color: #63a63e;
   border: none;
 }
@@ -577,7 +589,6 @@ a.favorit-button {
   padding: 11px 39px;
   padding-left: 43px;
   font-size: 14px;
-  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
@@ -668,6 +679,7 @@ a.user-cabinet {
 }
 
 .user-login {
+  font-size: 21px;
   text-align: right;
 }
 
