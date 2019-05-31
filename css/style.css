@@ -1,8 +1,4 @@
 body {
-  width: 1200px;
-  padding: auto;
-  margin: 0 auto;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 17px;
@@ -10,6 +6,11 @@ body {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
 }
 
 a {
@@ -24,29 +25,19 @@ a {
   color: #ee3643;
 }
 
-.h2,
-.manufacturers,
-.breadcrumbs,
-.supply,
-.page-title {
+.h2 {
   text-transform: uppercase;
-}
-
-.h2,
-.partnnership-list,
-.main-footer-top,
-.main-header,
-.button {
   font-family: "Cuprum", Arial, sans-serif;
 }
 
 .main-navigation-logo img {
-  padding: 13px 56px;
-  padding-bottom: 16px;
   background-color: #ee3643;
 }
 
 .search {
+  width: 270px;
+  margin-left: 10px;
+  max-height: 42px;
   background-color: #293449;
   color: #ffffff;
 }
@@ -82,45 +73,85 @@ a {
   color: #ffffff; 
 }
 
-.site-search-navigation,
-.site-navigation,
-.main-navigation,
-.main-navigation-footer,
-.site-navigation-footer,
-.footer-social {
+.site-search-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
   list-style: none;
+  text-align: right;
 }
 
-.site-navigation a,
-.site-search-navigation a,
-.footer-copyrights a,
-.main-navigation a,
-.site-navigation-footer a,
-.footer-social a {
-  color: #ffffff;
-}
-
-.main-navigation-footer a,
-.footer-support a,
-.footer-copyright a {
-  color: #ebc37c;
+.site-search-navigation li{
+  margin: auto;
+  padding: 12px 21px;
 }
 /* шапка */
 .main-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  min-height: 320px;
   color: #ffffff;
 
+  margin-bottom: 60px;
   background-color: #f1f5f7;
 }
 
-.site-search-navigation a {
-  color: #ffffff;
+.search-marker-basket-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-height: 42px;
+  margin-bottom: 48px;
+}
+
+.contacts-navigation {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 44px;
+}
+
+.contacts-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts {
+  margin: auto;
+  text-align: center;
+}
+
+.user-login {
+  margin: auto;
+  font-size: 21px;
 }
 
 .exposition {
+  width: 216px;
+  margin-left: 50px;
   font-size: 16px;
   font-weight: 700;
   line-height: 23px;
   color: #ee3643;
+}
+
+.main-navigation {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  list-style: none;
+
+  background-color: #32425c;
+
+  margin-bottom: 60px;
+}
+
+.main-navigation a {
+  color: #ffffff;
+}
+
+.site-search-navigation a {
+  color: #ffffff;
 }
 
 .tel a {
@@ -173,21 +204,15 @@ a.private-office {
 }
 
 /* строка с поиском и карзиной и копирайты */
-.search-marker-basket,
-.footer-copyrights {
+.search-marker-basket {
   color: #ffffff;
   background-color: #293449;
 }
-/* главная и тд*/
-.main-navigation {
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
 
-  background-color: #32425c;
-}
+/* главная и тд*/
 
 .main-footer-top {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #ffffff;
@@ -197,7 +222,11 @@ a.private-office {
 
 .footer-copyrights {
   font-family: "Cuprum", Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
   font-size: 16px;
+  color: #ffffff;
+  background-color: #293449
 }
 
 a.registry-link {
@@ -234,9 +263,17 @@ a.user-cabinet:active {
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
   font-family: "Cuprum", Arial, sans-serif;
+  padding: 21px;
+  list-style: none;
   font-size: 17px;
   line-height: 17px;
+}
+
+.site-navigation a {
+color: #ffffff;
 }
 
 .site-navigation a:hover,
@@ -284,6 +321,7 @@ a.private-office:active {
 .site-navigation-footer a:active {
   color: #929caa;
 }
+
 .main-navigation-footer a:active {
   color: #998a6e;
 }
@@ -294,8 +332,16 @@ a.private-office:active {
   color: #ee3643;
 }
 
+.main{
+  margin-bottom: 86px;
+}
+
 .partnnership-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  font-family: "Cuprum", Arial, sans-serif;
+  margin-bottom: 42px;
 }
 
 .partnnership-list li::before {
@@ -306,19 +352,21 @@ a.private-office:active {
   color: #ee3643;
 }
 
-.page-title h2 {
+.page-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
   color: #32425c;
   background-color: #f2f6f8;
+  text-transform: uppercase;
 }
 
 .breadcrumbs {
   font-size: 13px;
   line-height: 18px;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .breadcrumbs a {
@@ -462,6 +510,7 @@ button.find-link {
   color: #000000;
 
   background-color: #ffffff;
+  text-transform: uppercase;
 }
 
 .supply {
@@ -471,6 +520,7 @@ button.find-link {
   color: #000000;
 
   background-color: #ffffff;
+  text-transform: uppercase;
 }
 
 .filter-input {
@@ -481,8 +531,14 @@ button.find-link {
   background-color: #ffffff;
 }
 
+.main-wrapper {
+  display: flex;
+}
+
 .about-company {
-  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
   color: #000000;
 }
 
@@ -516,7 +572,8 @@ button.find-link {
 }
 
 .map {
-  text-align: left;
+  margin: 0;
+  padding: 0;
   color: #000000;
 }
 
@@ -550,6 +607,7 @@ button.find-link {
 }
 
 a.button {
+  font-family: "Cuprum", Arial, sans-serif;
   padding: 14px 29px;
   font-size: 14px;
   line-height: 18px;
@@ -612,8 +670,8 @@ a.favorit-button {
 
 /* кнопки*/
 a.button-ckeckout {
-  padding: 14px 22px;
-  padding-bottom: 16px;
+  margin-left: 10px;
+  padding: 12px 21px;
   font: inherit;
   text-align: center;
   color: #ffffff;
@@ -653,13 +711,53 @@ a.user-cabinet {
   left: 50%;
 }*/
 
+.main-navigation-footer {
+  display: flex;
+  margin: auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-navigation-footer a {
+  padding: 12px;
+  color: #ffd180;
+}
+
+.site-navigation-footer {
+  display: flex;
+  margin: auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-navigation-footer a {
+  padding: 12px;
+  color: #ffffff;
+}
+
+.block-footer-left {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-contacts {
   font-style: normal;
 }
 
+
 .footer-social {
+  display: flex;
+  margin: auto;
+  padding: 0;
+  list-style: none;
   text-align: center;
 }
+
+.footer-social a {
+  padding: 5px;
+  color: #ffffff;
+}
+
 
 .social-button {
   color: #ffffff;
@@ -669,8 +767,16 @@ a.user-cabinet {
   text-align: right;
 }
 
+.footer-copyright a {
+  color: #ebc37c;
+}
+
 .footer-support {
   text-align: right;
+}
+
+.footer-support a {
+  color: #ebc37c;
 }
 
 .footer-copyrights p:first-child {
@@ -681,11 +787,9 @@ a.user-cabinet {
   text-align: left;
 }
 
-.user-login {
-  font-size: 21px;
-  text-align: right;
+.block-footer-right {
+  display: flex;
+  justify-content: space-between;
 }
 
-.contacts {
-  text-align: center;
-}
+
