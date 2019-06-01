@@ -18,6 +18,8 @@ a {
 }
 
 .h1 {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -26,18 +28,23 @@ a {
 }
 
 .h2 {
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
   font-family: "Cuprum", Arial, sans-serif;
 }
+
+
 
 .main-navigation-logo img {
   background-color: #ee3643;
 }
 
 .search {
-  width: 270px;
-  margin-left: 10px;
-  max-height: 42px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-left: 40px;
   background-color: #293449;
   color: #ffffff;
 }
@@ -78,28 +85,24 @@ a {
   padding: 0;
   display: flex;
   list-style: none;
-  text-align: right;
 }
 
-.site-search-navigation li{
-  margin: auto;
+.site-search-navigation a {
+  display: inline-block;
   padding: 12px 21px;
 }
 /* шапка */
-.main-header {
+.main-header  {
   font-family: "Cuprum", Arial, sans-serif;
   min-height: 320px;
   color: #ffffff;
-
-  margin-bottom: 60px;
   background-color: #f1f5f7;
+  margin-bottom: 23px;
 }
 
 .search-marker-basket-wrapper {
   display: flex;
-  justify-content: space-between;
   max-height: 42px;
-  margin-bottom: 48px;
 }
 
 .contacts-navigation {
@@ -115,16 +118,21 @@ a {
 }
 
 .contacts {
-  margin: auto;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
 .user-login {
-  margin: auto;
+  margin: 0;
+  padding: 0;
   font-size: 21px;
+  text-align: center;
 }
 
 .exposition {
+  margin: 0;
+  padding: 0;
   width: 216px;
   margin-left: 50px;
   font-size: 16px;
@@ -134,16 +142,15 @@ a {
 }
 
 .main-navigation {
-  margin: 0;
+  margin: auto;
   padding: 0;
+  width: 940px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   list-style: none;
 
   background-color: #32425c;
-
-  margin-bottom: 60px;
 }
 
 .main-navigation a {
@@ -156,13 +163,19 @@ a {
 
 .tel a {
   font-family: "Cuprum", Arial, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 71px;
+  padding-right: 49px;
+  margin: auto;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
-  border: 2px solid #ffffff;  
+  border: 3px solid #ffffff;  
 }
 
 .address {
+  margin-top: 20px;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;   
@@ -170,8 +183,9 @@ a {
 
 .login-info {
   font-family: "Cuprum", Arial, sans-serif;
-  padding: 14px 48px;
-  padding-bottom: 16px;
+  margin: 0;
+  padding: 14px;
+  padding-left: 47px;
   padding-right: 69px;
   font-size: 21px;
   line-height: 21px;
@@ -205,6 +219,8 @@ a.private-office {
 
 /* строка с поиском и карзиной и копирайты */
 .search-marker-basket {
+  font-family: "Cuprum", Arial, sans-serif;
+  margin-bottom: 46px;
   color: #ffffff;
   background-color: #293449;
 }
@@ -213,6 +229,7 @@ a.private-office {
 
 .main-footer-top {
   font-family: "Cuprum", Arial, sans-serif;
+  min-height: 193px;
   font-size: 18px;
   line-height: 20px;
   color: #ffffff;
@@ -220,13 +237,21 @@ a.private-office {
   background-color: #32425c;
 }
 
+
 .footer-copyrights {
+  margin: 0;
+  padding: 0;
+  padding-top: 36px;
   font-family: "Cuprum", Arial, sans-serif;
-  display: flex;
-  justify-content: space-between;
+  min-height: 107px;
   font-size: 16px;
   color: #ffffff;
   background-color: #293449
+}
+
+.footer-copyrights-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 a.registry-link {
@@ -313,9 +338,22 @@ a.private-office:active {
 .footer-support a:hover,
 .footer-support a:focus,
 .footer-copyright a:hover,
-.footer-copyright a:focus,
-.user {
+.footer-copyright a:focus {
   text-decoration: underline;
+}
+
+
+.user {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.user li {
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation-footer a:active {
@@ -353,6 +391,7 @@ a.private-office:active {
 }
 
 .page-title {
+  padding: 33px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -363,6 +402,9 @@ a.private-office:active {
 }
 
 .breadcrumbs {
+  margin: 0;
+  padding: 0; 
+  display: flex;
   font-size: 13px;
   line-height: 18px;
   list-style: none;
@@ -371,6 +413,9 @@ a.private-office:active {
 
 .breadcrumbs a {
   color: #000000;
+}
+.breadcrumbs li{
+  margin-right: 17px;
 }
 
 .breadcrumbs a:hover,
@@ -382,11 +427,15 @@ a.private-office:active {
   color: #000000;
 }
 
+.filters {
+  width: 220px;
+}
+
 .filters fieldset {
   border: none;
 }
 
-.filters legend {
+.legend {
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
@@ -396,6 +445,18 @@ a.private-office:active {
   list-style: none;
   line-height: 20px;
   font-weight: normal;
+}
+
+.manufacturers-list {
+  margin: 0;
+  padding: 0;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.supply-list {
+  margin: 0;
+  padding: 0;
 }
 
 .filter-option {
@@ -426,6 +487,9 @@ button.find-link {
 }
 
 .catalog {
+  width: 700px;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -433,13 +497,36 @@ button.find-link {
   background-color: #ffffff;
 }
 
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog ul {
   list-style: none;
 }
 
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+
+  list-style: none;
+}
+
 .catalog-item {
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px #e5e5e5;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -461,7 +548,16 @@ button.find-link {
   color: #000000
 }
 
+.catalog-item-title {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000
+}
+
 .pagination-list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -542,11 +638,17 @@ button.find-link {
   color: #000000;
 }
 
+.about-company-wrapper {
+  height: 320px;
+  margin-bottom: 10px;
+}
+
 .about-company h2 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
+  margin-bottom: 39px;
   color: #000000;
 }
 
@@ -560,6 +662,7 @@ button.find-link {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin-bottom: 28px;
   color: #000000;
 }
 
@@ -589,6 +692,7 @@ button.find-link {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+  margin-bottom: 36px;
 }
 
 .map a {
@@ -597,6 +701,10 @@ button.find-link {
   color: #000000;
 
   background-color: #ee3643;
+}
+
+img.map-img{
+  margin-bottom: 40px;
 }
 
 .b-popup {
@@ -675,9 +783,9 @@ a.button-ckeckout {
   font: inherit;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   background-color: #63a63e;
   border: none;
+  white-space: nowrap;
 }
 
 a.button-ckeckout:hover,
@@ -713,55 +821,72 @@ a.user-cabinet {
 
 .main-navigation-footer {
   display: flex;
-  margin: auto 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .main-navigation-footer a {
-  padding: 12px;
+  margin-right: 60px;
   color: #ffd180;
+}
+
+.main-navigation-footer li:last-child a {
+  margin-right: 0;
 }
 
 .site-navigation-footer {
   display: flex;
-  margin: auto 0;
-  padding: 0;
+  margin: 0;
+  margin-left: 79px;
+  padding: 30px;
   list-style: none;
 }
 
 .site-navigation-footer a {
-  padding: 12px;
+  padding: 0;
+  margin-left: 60px;
   color: #ffffff;
 }
 
+
 .block-footer-left {
   display: flex;
-  justify-content: space-between;
+  min-height: 68px;
+  margin-bottom: 10px;
 }
 
 .footer-contacts {
+  margin: 0;
+  padding: 0;
   font-style: normal;
-}
+  min-width: 322px;
+  }
 
 
 .footer-social {
   display: flex;
-  margin: auto;
+  margin: 0;
   padding: 0;
   list-style: none;
+  align-items: center;
   text-align: center;
 }
 
 .footer-social a {
-  padding: 5px;
+  margin-left: 3px;
+  padding: 13px;
+  background: #212a3a;
   color: #ffffff;
 }
 
-
-.social-button {
+/*
+.social-button img {
+  margin-left: 3px;
+  padding: 13px;
+  background: #212a3a;
   color: #ffffff;
-}
+}*/
 
 .footer-copyright {
   text-align: right;
@@ -772,7 +897,7 @@ a.user-cabinet {
 }
 
 .footer-support {
-  text-align: right;
+  margin-left: 40px;
 }
 
 .footer-support a {
@@ -783,11 +908,14 @@ a.user-cabinet {
   text-align: left;
 }
 
-.exposition {
-  text-align: left;
+.support-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .block-footer-right {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
 }
