@@ -36,17 +36,22 @@ a {
 
 
 
-.main-navigation-logo img {
+.main-navigation-logo {
   background-color: #ee3643;
+  display: flex;
+  width: 220px;
+  justify-content: center;
+  align-items: center;
 }
 
 .search {
   margin: 0;
   padding: 0;
-  width: 100%;
+  flex-grow: 1;
   margin-left: 40px;
   background-color: #293449;
   color: #ffffff;
+  border: none;
 }
 
 .search:hover {
@@ -120,12 +125,16 @@ a {
 .contacts {
   margin: 0;
   padding: 0;
+  margin-top: 10px;
+  width: 270px;
   text-align: center;
 }
 
 .user-login {
   margin: 0;
   padding: 0;
+  margin-top: 10px;
+  width: 300px;
   font-size: 21px;
   text-align: center;
 }
@@ -133,7 +142,7 @@ a {
 .exposition {
   margin: 0;
   padding: 0;
-  width: 216px;
+  width: 200px;
   margin-left: 50px;
   font-size: 16px;
   font-weight: 700;
@@ -185,8 +194,8 @@ a {
   font-family: "Cuprum", Arial, sans-serif;
   margin: 0;
   padding: 14px;
-  padding-left: 47px;
-  padding-right: 69px;
+  padding-left: 46px;
+  padding-right: 68px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -391,11 +400,13 @@ a.private-office:active {
 }
 
 .page-title {
+  margin: 0;
   padding: 33px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
+  margin-bottom: 20px;
   color: #32425c;
   background-color: #f2f6f8;
   text-transform: uppercase;
@@ -408,6 +419,7 @@ a.private-office:active {
   font-size: 13px;
   line-height: 18px;
   list-style: none;
+  margin-bottom: 23px;
   text-transform: uppercase;
 }
 
@@ -478,9 +490,8 @@ button.find-link {
   padding: 14px 38px;
   font: inherit;
   font-size: 13px;
-  line-height: 18px;
   text-align: center;
-  vertical-align: middle;
+  font-weight: 400;
   color: #000000;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
@@ -555,13 +566,23 @@ button.find-link {
 }
 
 .pagination-list {
+  display: flex;
   padding: 0;
   margin: 0;
+  margin-bottom: 60px;
 
   list-style: none;
 }
 
+.pagination-list li{
+  padding: 0;
+  margin: 0;
+}
+
 .pagination-item a {
+  font-size: 13px;
+  padding: 9px 13px;
+  margin-right: 4px;
   color: #000000;
   font-weight: normal;
   border: 1px solid #e5e5e5;
@@ -634,6 +655,7 @@ button.find-link {
 .about-company {
   margin: 0;
   padding: 0;
+  width: 518px;
   margin-right: 100px;
   color: #000000;
 }
@@ -677,6 +699,7 @@ button.find-link {
 .map {
   margin: 0;
   padding: 0;
+  width: 300px;
   color: #000000;
 }
 
@@ -727,7 +750,7 @@ a.button {
 }
 
 a.button-support {
-  padding: 14px 50px;
+  padding: 14px 61px;
 }
 
 button.send-link {
@@ -850,10 +873,10 @@ a.user-cabinet {
 }
 
 
-.block-footer-left {
+.block-footer-top {
   display: flex;
   min-height: 68px;
-  margin-bottom: 10px;
+  margin-bottom: 31px;
 }
 
 .footer-contacts {
@@ -880,13 +903,17 @@ a.user-cabinet {
   color: #ffffff;
 }
 
-/*
-.social-button img {
-  margin-left: 3px;
-  padding: 13px;
+
+.social-button {
+  display: flex;
+  width: 10px;
+  height: 10px;
   background: #212a3a;
   color: #ffffff;
-}*/
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
 
 .footer-copyright {
   text-align: right;
@@ -913,7 +940,7 @@ a.user-cabinet {
   justify-content: space-between;
 }
 
-.block-footer-right {
+.block-footer-bottom {
   margin: 0;
   padding: 0;
   display: flex;
