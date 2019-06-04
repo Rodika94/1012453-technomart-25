@@ -307,6 +307,7 @@ a.user-cabinet:active {
 }
 
 .site-navigation a {
+  padding: 19px;
 color: #ffffff;
 }
 
@@ -531,16 +532,153 @@ button.find-link {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  width: 700px;
+  margin: 20px auto;
   text-align: center;
 
   list-style: none;
 }
 
 .catalog-item {
-  width: 220px;
-  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  width: 218px;
   margin-right: 20px;
+  margin-bottom: 20px;
+  
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  
+  border: 1px solid #ccc;
+}
+
+.catalog-item .new {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  
+  width: 60px;
+  height: 60px;
+  
+  overflow: hidden;
+  z-index: 20;
+}
+
+.catalog-item .image {
+  width: 218px;
+  height: 168px;
+}
+
+.catalog-item .image img {
+  max-width: 100%;
+}
+
+.catalog-item .catalog-item-title {
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px; 
+}
+
+.catalog-item .discount {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  
+  color: #999;
+  text-decoration: line-through;
+}
+
+.catalog-item .price {
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.catalog-item .price:after {
+  content: "";
+  
+  position: absolute;
+  top: 0;
+  right: -20px;
+  
+  width: 0;
+  height: 0;
+  
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
+.catalog-item .buy-favorit-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.catalog-item .buy-favorit-button .buy-button,
+.catalog-item .buy-favorit-button .favorit-button {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-item .buy-favorit-button .favorit-button {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.catalog-item .buy-favorit-button {
+  display: none;
+}
+
+.catalog-item:hover .buy-favorit-button {
+  display: block;
+}
+
+.top-perforators-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.catalog-items {
+  font-size: 0;
+}
+
+.catalog-item {
+  font-size: 16px;
+}
+
+.top-perforators-item {
+  width: 220px;
   background-color: transparent;
   box-shadow: inset 0 0 0 1px #e5e5e5;
 }
@@ -782,8 +920,15 @@ button.find-link {
 }
 
 .about-company-wrapper {
+  padding: 0;
+  margin: 0;
   height: 320px;
   margin-bottom: 10px;
+}
+
+.company-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-company h2 {
@@ -1013,8 +1158,8 @@ a.user-cabinet {
 .site-navigation-footer {
   display: flex;
   margin: 0;
-  margin-left: 79px;
-  padding: 30px;
+  margin-left: 68px;
+  padding-top: 30px;
   list-style: none;
 }
 
@@ -1099,4 +1244,320 @@ a.user-cabinet {
   justify-content: space-between;
 }
 
+.visually-catalog {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 53px;
+  height: 410px;
+}
 
+.visually-catalog-list {
+  font-family: "Cuprum", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.visually-catalog-list li {
+
+  border: none;
+  margin-bottom: 20px;
+}
+
+.visually-catalog-item {
+  padding: 0;
+  margin: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  width: 300px;
+  height: 123px;
+}
+
+.visually-catalog-img {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  width: 620px;
+  height: 266px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.visually-catalog-item-img div {
+  margin-bottom: 20px;
+}
+
+.visually-catalog-img>a {
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff
+}
+
+.visually-catalog-img>a>span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.visually-catalog-item>a {
+  font-size: 24px;
+  line-height: 30px;
+  margin-left: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.visually-catalog-item>a>span {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+a.button-visually-catalog {
+  font-family: "Cuprum", Arial, sans-serif;
+  padding: 10px 39px;
+  margin: 0;
+  font-size: 14px;
+  border-radius: 2px;
+  color: #ffffff;
+  background-color: #ee3643;
+
+}
+
+.materials {
+  background-color: #ffbf47;
+}
+
+.materials>a>span {
+  padding: 10px 22px;
+  border-radius: 2px;
+  background-color: #e5ac40;
+}
+
+.instrument {
+  background-color: #3bbce3;
+}
+
+.instrument>a>span {
+  padding: 10px 24px;
+  border-radius: 2px;
+  background-color: #35a9cc;
+}
+
+.equipment {
+  background-color: #dc91d8;
+}
+
+.equipment>a>span {
+  padding: 10px 29px;
+  border-radius: 2px;
+  background-color: #c682c2;
+}
+
+.drill {
+  background-color: #000000;
+}
+
+.discounts {
+  background-color: #8ed78f;
+}
+
+.discounts>a>span {
+  padding: 10px 21px;
+  border-radius: 2px;
+  background-color: #80c180;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
+.delivery>a>span {
+  padding: 10px 34px;
+  border-radius: 2px;
+  background-color: #e5ac40;
+}
+
+.div-with-info {
+  padding: 0;
+  margin: 0;
+}
+
+.div-with-info-list {
+  padding: 0px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  color: #32425c;
+  background-color: #f9f5f0;
+  font-family: "Cuprum", Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.div-with-info-list li {
+  padding: 27px;
+  margin: 0;
+}
+
+.div-with-info-item-catalog {
+  padding: 11px 55px;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+
+.div-with-info-manufacturers {
+  padding: 11px 69px;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+
+.top-perforators {
+  padding: 0;
+  margin: 0;
+}
+
+.top-perforators-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+  list-style: none;
+}
+
+.top-manufacturers {
+  padding: 0
+  margin: 0;
+  height: 312px;
+  margin-bottom: 60px; 
+}
+
+.top-manufacturers-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  align-items: center;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.top-manufacturers-list li {
+  display: flex;
+  width: 220px;
+  height: 145px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea; 
+}
+
+.top-manufacturers-item {
+  margin: auto;
+}
+
+.delivery-info {
+  padding: 0;
+  margin: 0;
+  height: 522px;
+  margin-bottom: 82px;
+  background-color: #f4f8fa;
+}
+
+.delivery-wrapper {
+  padding: 0;
+  margin: 0;
+  width: 594px;
+  min-height: 378px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info-servis {
+  padding: 0;
+  margin: 0;
+  width: 398px;
+  margin-top: 68px;
+}
+
+.h2-servis {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  list-style: 30px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.info-servis p {
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 74px;
+}
+
+.delivery-list {
+  font-family: "Cuprum", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 240px;
+  height: 186px;
+  font-size: 21px;
+  line-height: 30px;
+  list-style: none;
+  background-color: #32425c;
+}
+
+.delivery-list li {
+  margin: 0;
+  border: none;
+  padding: 15px;
+  padding-left: 23px;
+  border-bottom: 1px solid #293449;
+  border-top: 1px solid #405069;
+  color: #ffffff;
+}
+
+.delivery-list li:hover,
+.delivery-list li:focus {
+  color: #32425c;
+  border: none;
+  background-color: #ffffff;
+}
+
+.info-delivery {
+  padding: 0;
+  margin: 0;
+  width: 311px;
+  height: 150px;
+}
+
+.info-delivery p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.h2-delivery {
+  padding: 0;
+  margin: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+  text-transform: uppercase;
+
+}
