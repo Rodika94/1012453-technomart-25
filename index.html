@@ -13,7 +13,10 @@
 			<div class="container">
 				<div class="search-marker-basket-wrapper">
 					<a class="main-navigation-logo" href="index.html"><img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип Техномарт"></a>
-					<input type="text" name="search" placeholder="Поиск:" class="search">				
+					<div class="search-wrapper">
+						<input type="text" name="search" placeholder="Поиск:" class="search">
+					</div>
+
 					<ul class="site-search-navigation">  		      	 
 						<li><a class="marker" href="marker.html">Закладки: <span>0</span></a></li>
 						<li><a class="basket" href="basket.html">Корзина: <span>0</span></a></li>
@@ -65,17 +68,36 @@
 			<div class="container">
 				<ul class="visually-catalog-list">
 					<li class="visually-catalog-item materials">
-						<a  href="">Материалы<span>На любой вкус</span></a>
-						<span class="new"><img src="img/new-flag.png" width="60" height="59" alt="Новый товар">
+						<div class="new">
+							<img src="img/new-flag.png" width="60" height="59" alt="Новый товар">
+						</div>
+						<div>Материалы</div>
+						<a  href="">На любой вкус</a>
+						
 					</li>
-					<li class="visually-catalog-item instrument"><a href="">Инструмент<span>На все случаи</span></a></li>
-					<li class="visually-catalog-item equipment"><a href="">Техника<span>Для стройки</span></a></li>
+					<li class="visually-catalog-item instrument">
+						<div>Инструмент</div>
+						<a href="">На все случаи</a>
+					</li>
+					<li class="visually-catalog-item equipment">
+						<div>Техника</div>
+						<a href="">Для стройки</a>
+					</li>
 					<li class="visually-catalog-img drill slider">
-						<a href=""><img src="" width="" height="" alt="">Дрели<span>Соседям на радость!</span></a>
-						<a class="button-visually-catalog" href="catalog.html"><span>Открыть каталог</span></a></li>
+						<!-- <img src="" width="" height=""> -->
+						<p>Дрели</p>
+						<p>Соседям на радость!</p>
+						<a class="button-visually-catalog" href="catalog.html">Открыть каталог</a>
+					</li>
 					<li class="visually-catalog-item-img"> 
-						<div class="visually-catalog-item discounts"><a href="">Скидки 50%<span>На 350 товаров</span></a></div>
-						<div class="visually-catalog-item delivery"><a href="">Доставка<span> Бесплатно</span></a></div>
+						<div class="visually-catalog-item visually-catalog-item-img discounts">
+							<div>На 350 товаров</div>
+							<a href="">Скидки 50%</a>
+						</div>
+						<div class="visually-catalog-item visually-catalog-item-img delivery">
+							<div>Доставка</div>
+							<a href="">Бесплатно</a>
+						</div>
 					</li>
 					
 				</ul>
@@ -162,7 +184,7 @@
 						<div class="title-catalog">
 							<div class="catalog-item-title">Перфоратор BOSCH BFG 2000</div>
 						</div>						<p class="catalog-item-price">
-						<div class="price">12500 Р.</div>
+						<div class="price title-price">12500 Р.</div>
 					</li>
 				</ul>
 			</div>
@@ -193,7 +215,7 @@
 		</section>
 
 		<section class="delivery-info">
-			<div class="container">
+			<div class="container container-delivery-info">
 				<div class="delivery-wrapper">
 					<div class="info-servis">
 							<h2 class="h2-servis">Сервисы</h2>
@@ -212,7 +234,7 @@
 					<div class="info-delivery">
 							<h2 class="h2-delivery">Доставка</h2>
 							<p>
-								Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+								Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!
 							</p>
 					</div>
 				</div>
@@ -239,8 +261,10 @@
 								<li>Автотрейдинг</li>
 								<li>ЖелДорЭкспедиция</li>
 							</ul>
-						</div>	
-						<a class="button" href="info.html">Подробнее о компании</a>
+						</div>
+						<div>	
+							<a class="button" href="info.html">Подробнее о компании</a>
+					    </div>
 					</section>
 
 					<section class="map">
