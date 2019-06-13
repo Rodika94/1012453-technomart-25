@@ -72,16 +72,16 @@
 							<img src="img/new-flag.png" width="60" height="59" alt="Новый товар">
 						</div>
 						<div>Материалы</div>
-						<a  href="">На любой вкус</a>
+						<a  href="materials.html">На любой вкус</a>
 						
 					</li>
 					<li class="visually-catalog-item instrument">
 						<div>Инструмент</div>
-						<a href="">На все случаи</a>
+						<a href="instrument.html">На все случаи</a>
 					</li>
 					<li class="visually-catalog-item equipment">
 						<div>Техника</div>
-						<a href="">Для стройки</a>
+						<a href="equipment.html">Для стройки</a>
 					</li>
 					<li class="visually-catalog-img drill slider">
 						<!-- <img src="" width="" height=""> -->
@@ -92,11 +92,11 @@
 					<li class="visually-catalog-item-img"> 
 						<div class="visually-catalog-item visually-catalog-item-img discounts">
 							<div>На 350 товаров</div>
-							<a href="">Скидки 50%</a>
+							<a href="discounts.html">Скидки 50%</a>
 						</div>
 						<div class="visually-catalog-item visually-catalog-item-img delivery">
 							<div>Доставка</div>
-							<a href="">Бесплатно</a>
+							<a href="delivery.html">Бесплатно</a>
 						</div>
 					</li>
 					
@@ -202,14 +202,14 @@
 		<section class="top-manufacturers">
 			<div class="container">
 				<ul class="top-manufacturers-list">
-					<li><a class="top-manufacturers-item bosch"><img src="img/bosch.png" width="126" height="37" alt="bosch"></a></li>
-					<li><a class="top-manufacturers-item makita"><img src="img/makita.png" width="123" height="40" alt="makita"></a></li>
-					<li><a class="top-manufacturers-item dewalt"><img src="img/dewalt.png" width="146" height="44" alt="dewalt"></a></li>
-					<li><a class="top-manufacturers-item interscol"><img src="img/interscol.png" width="200" height="88" alt="interscol"></a></li>
-					<li><a class="top-manufacturers-item hitachi"><img src="img/hitachi.png" width="169" height="31" alt="hitachi"></a></li>
-					<li><a class="top-manufacturers-item lg"><img src="img/lg.png" width="121" height="73" alt="lg"></a></li>
-					<li><a class="top-manufacturers-item aeg"><img src="img/aeg.png" width="151" height="96" alt="aeg"></a></li>
-					<li><a class="top-manufacturers-item metabo"><img src="img/metabo.png" width="204" height="69" alt="metabo"></a></li>
+					<li><a class="top-manufacturers-item bosch" href="bosch.html"><img src="img/bosch.png" width="126" height="37" alt="bosch"></a></li>
+					<li><a class="top-manufacturers-item makita" href="makita.html"><img src="img/makita.png" width="123" height="40" alt="makita"></a></li>
+					<li><a class="top-manufacturers-item dewalt" href="dewalt.html"><img src="img/dewalt.png" width="146" height="44" alt="dewalt"></a></li>
+					<li><a class="top-manufacturers-item interscol" href="interscol.html"><img src="img/interscol.png" width="200" height="88" alt="interscol"></a></li>
+					<li><a class="top-manufacturers-item hitachi" href="hitachi.html"><img src="img/hitachi.png" width="169" height="31" alt="hitachi"></a></li>
+					<li><a class="top-manufacturers-item lg" href="lg.html"><img src="img/lg.png" width="121" height="73" alt="lg"></a></li>
+					<li><a class="top-manufacturers-item aeg" href="aeg.html"><img src="img/aeg.png" width="151" height="96" alt="aeg"></a></li>
+					<li><a class="top-manufacturers-item metabo" href="metabo.html"><img src="img/metabo.png" width="204" height="69" alt="metabo"></a></li>
 				</ul>
 			</div>
 		</section>
@@ -226,9 +226,9 @@
 					</div>
 					
 					<ul class="delivery-list">
-						<li>Доставка</li>
-						<li>Гарантия</li>
-						<li>Кредит</li>
+						<li><a class="delivery-item current" href="delivery.html">Доставка</a></li>
+						<li><a class="delivery-item" href="guarantee.html">Гарантия</a></li>
+						<li><a class="delivery-item" href="credit.html">Кредит</a></li>
 					</ul>
 
 					<div class="info-delivery">
@@ -344,21 +344,32 @@
 	</footer>
 
 	<!-- попытка попапа -->
-	<form class="b-popup" method="post" action="https://echo.htmlacademy.ru">
-		<p class="b-popup-content">
-			<label for="name-for-help">Ваше имя:</label>
-			<input id="name-for-help" type="text" name="name" placeholder="Имя Фамилия">
-		</p>
-		<p class="b-popup-content">
-			<label for="email-for-help">Ваш e-mail:</label>
-			<input id="email-for-help" type="email" name="e-mail" placeholder="e-mail@example.com"></input>
-		</p>
-		<p class="b-popup-content">
-			<label for="text-for-help">Текст письма:</label>
-			<textarea id="text-for-help" type="text" name="text" placeholder="В свободной форме"></textarea>
-		</p>
-
+	<form class="b-popup container" method="post" action="https://echo.htmlacademy.ru">
+		<a class="close" href="index.html"></a>
+		<div class="b-popup-wrapper">
+			<div class="b-popup-content-wrapper">
+				<p class="b-popup-content">
+					<label for="name-for-help">Ваше имя:</label>
+				</p>
+				<input class="for-help" type="text" name="name" placeholder="Имя Фамилия">
+			</div>
+			<div class="b-popup-content-wrapper">
+				<p class="b-popup-content">
+					<label for="email-for-help">Ваш e-mail:</label>
+				</p>
+				<input class="for-help" type="email" name="e-mail" placeholder="e-mail@example.com"></input>
+			</div>
+		</div>
+		<div class="b-popup-content-wrapper textarea-wrapper">
+			<p class="b-popup-content">
+				<label for="text-for-help">Текст письма:</label>
+			</p>
+			<textarea class="text-help" type="text" name="text" placeholder="В свободной форме"></textarea>
+		</div>
+		
+		<div class="send-link-wrapper">
 		<button class="send-link" type="submit">Отправить</button>
+		</div>
 	</form>	
 
 </body>
