@@ -699,7 +699,7 @@ a.private-office:active {
 .manufacturers-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -711,8 +711,108 @@ a.private-office:active {
 .filter-option {
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  padding-left: 35px;
+  margin-bottom: 19px;
   font-size: 15px;
+  position: relative;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.filter-checkbox input[type="checkbox"] + .filter-input-check {
+  position: absolute;
+  top: -4px;
+  left: 0;
+
+  width: 21px;
+  height: 21px;
+
+  border: 2px solid #c5c5c5;
+  border-radius: 2px;
+}
+
+.filter-checkbox input[type="checkbox"]:hover + .filter-input-check {
+  cursor: pointer;
+}
+
+.filter-checkbox input[type="checkbox"]:active + .filter-input-check {
+  position: absolute;
+  content: "";
+  background-image: url(../img/checkbox-on.svg); 
+  background-color: #ffffff;
+  background-size: 25px 25px;
+  width: 25px; 
+  height: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .filter-input-check {
+  position: absolute;
+  content: "";
+  background-image: url(../img/checkbox-on.svg); 
+  background-color: #ffffff;
+  background-size: 25px 25px;
+  width: 25px; 
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  left: 0;
+}
+
+.filter-option input[type="radio"] + .filter-input-checked {
+  position: absolute;
+  top: -4px;
+  left: 0;
+
+  width: 21px;
+  height: 21px;
+
+  border: 2px solid #c5c5c5;
+  border-radius: 50%;
+}
+
+.filter-checkbox input[type="radio"]:hover + .filter-input-checked {
+  cursor: pointer;
+}
+
+.filter-checkbox input[type="radio"]:active + .filter-input-checked {
+  position: absolute;
+  content: "";
+  background-image: url(../img/radio-on.svg); 
+  background-color: #ffffff;
+  background-size: 25px 25px;
+  width: 25px; 
+  height: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+.filter-checkbox input[type="radio"]:checked + .filter-input-checked {
+  position: absolute;
+  content: "";
+  background-image: url(../img/radio-on.svg);
+  background-color: #ffffff;
+  background-size: 25px 25px; 
+  width: 25px; 
+  height: 25px;
+  border: none;
 }
 
 .filter-input:hover + label,
@@ -727,6 +827,7 @@ a.private-office:active {
 }
 
 button.find-link {
+  margin: 0;
   padding: 9px 43px;
   font: inherit;
   font-size: 13px;
@@ -1067,7 +1168,7 @@ button.find-link {
   line-height: 30px;
   list-style: none;
   color: #000000;
-  margin-bottom: 55px;
+  margin-bottom: 70px;
   background-color: #ffffff;
   text-transform: uppercase;
 }
@@ -1197,7 +1298,7 @@ button.find-link {
   padding: 0;
   margin: 0;
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 }
 
 .count-label {
@@ -1215,7 +1316,7 @@ button.find-link {
   text-align: center;
   border-radius: 3px;
   background-color: #f7f3ec;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   margin-top: 20px;
   position: relative;
 }
@@ -1289,7 +1390,6 @@ button.find-link {
   min-height: 28px;
   background-color: #f7f3ec;
   font-size: 17px;
-  margin-bottom: 9px;
   border-radius: 2px;
   text-align: center;
 }
@@ -1312,6 +1412,7 @@ button.find-link {
 }
 
 .filter-input {
+
   line-height: 20px;
   list-style: none;
   color: #000000;
