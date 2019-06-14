@@ -89,6 +89,8 @@
 	<main class="main-index">
 		<section class="visually-catalog">
 			<div class="container">
+				<input class="visually-hidden-radio" type="radio" id="product-1" name="toggle" checked>
+				<input class="visually-hidden-radio" type="radio" id="product-2" name="toggle">
 				<ul class="visually-catalog-list">
 					<li class="visually-catalog-item materials">
 						<div class="new">
@@ -106,9 +108,31 @@
 						<a href="equipment.html">Для стройки</a>
 					</li>
 					<li class="visually-catalog-img drill slider">
-						<p>Дрели</p>
-						<p>Соседям на радость!</p>
-						<a class="button-visually-catalog" href="catalog.html">Открыть каталог</a>
+						<div class="drill-perforators-wrapper">
+							<div class="slider-controls">
+								<label for="product-1" class="product-1"></label>
+								<label for="product-2" class="product-2"></label>
+							</div>
+							<ul class="slider-list">
+								<li class="slider-item slide" id="slide1">
+									<div class="slide-title-wrapper">
+										<h3 class="slide-title">Дрели</h3>
+										<p>Соседям на радость!</p>
+									</div>
+									<div class="button-visually-catalog-wrapper">
+										<a class="button-visually-catalog" href="catalog.html">Открыть каталог</a>
+									</div>
+								</li>
+								<li class="slider-item slide" id="slide2">
+									<div class="slide-title-wrapper">
+										<h3 class="slide-title-two">Перфораторы</h3>
+										<p>Настоящие мужские игрушки</p>
+									</div>
+									<div class="button-visually-catalog-wrapper">
+										<a class="button-visually-catalog" href="catalog.html">Открыть каталог</a>
+									</div>
+								</li>
+						</div>
 					</li>
 					<li class="visually-catalog-item-img"> 
 						<div class="visually-catalog-item visually-catalog-item-img discounts">

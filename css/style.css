@@ -1763,6 +1763,7 @@ a.user-cabinet:active::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .visually-catalog-list li {
@@ -1819,6 +1820,12 @@ a.user-cabinet:active::before {
 
 .visually-catalog-item a:active {
   background-color: rgba(0,0,0,0.3);
+}
+
+.button-visually-catalog-wrapper {
+  padding: 0;
+  margin-top: 96px;
+  margin-left: 24px;
 }
 
 a.button-visually-catalog {
@@ -1917,6 +1924,149 @@ a.button-visually-catalog:active {
   font-weight: 400;
   text-transform: none;
 }
+
+.drill-perforators-wrapper {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-top: 27px;
+  padding-left: 24px;
+  color: #ffffff;
+}
+
+.slider-list {
+  font-family: "Cuprum", Arial, sans-serif;
+
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.slider-item {
+  width: 620px;
+  min-height: 105px;
+  padding-top: 27px;
+  padding-left: 24px;
+}
+
+.slide-title {
+  width: 620px;
+  margin: 0 auto;
+  
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.slide-title-wrapper {
+  padding-top: 27px;
+  padding-left: 24px;
+  min-height: 78px;
+  background-color: rgba(0,0,0,0.2);
+  margin: 0;
+}
+
+.slide-title p{ 
+  width: 620px;
+  margin: 0 auto;
+  
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.slide-title-two {
+  width: 620px;
+  margin: 0 auto;
+  
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.slide-title-two .slide-title p{
+  font-family: "PT Sans", Arial, sans-serif;
+  width: 620px;
+  margin: 0 auto;
+  
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.product-1 {
+  display: inline-block;
+  position: absolute;
+  background-image: url(../img/icon-left.svg);
+  width: 22px;
+  height: 40px;
+  left: 24px;
+  top: 114px;
+  vertical-align: top;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 20;
+  font-size: 0;
+}
+
+.product-2 {
+  display: inline-block;
+  position: absolute;
+  background-image: url(../img/icon-right.svg);
+  width: 22px;
+  height: 40px;
+  right: 24px;
+  top: 114px;
+  vertical-align: top;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 20;
+  font-size: 0;
+}
+
+.visually-hidden-radio {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  clip: rect(0, 0, 0, 0);
+}
+
+.slide {
+  display: none;
+}
+
+#product-1:checked ~ .visually-catalog-list #slide1,
+#product-2:checked ~ .visually-catalog-list #slide2 {
+  display: block;
+}
+
+#product-1:checked ~ .visually-catalog-list #slide1 {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background-color: #849d8f;
+  background-image: url("../img/bosch-top-img.jpg");
+  height: 266px;
+  top: 0;
+  right: 0;
+}
+
+#product-2:checked ~ .visually-catalog-list #slide2 {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background-color: #849d8f;
+  background-image: url("../img/layer_98.jpg");
+  height: 266px;
+  top: 0;
+  right: 0;
+}
+
+
+
 
 .discounts {
   position: relative;
@@ -2274,25 +2424,6 @@ a.button-visually-catalog:active {
   border: none;
 }
 
-.range-controls {
-  position: relative;
-
-  margin-bottom: 32px;
-}
-
-.range-controls .scale {
-  height: 2px;
-
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.range-controls .bar {
-  width: 80%;
-  height: 2px;
-
-  background: #ffffff;
-}
-
 .range-toggle {
   position: absolute;
   top: -9px;
@@ -2307,43 +2438,8 @@ a.button-visually-catalog:active {
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  background: #1c4f80;
-}
-
-.range-toggle-min {
-  left: 0;
-}
-
-.range-toggle-max {
-  left: 80%;
-}
-
-.btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
-
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.btn-transparent:hover {
-  color: #000000;
-
-  background: #ffffff;
-}
-
-
-
 .b-popup-catalog {
+  display: none;
   padding: 0;
   width: 620px;
   height: 275px;
@@ -2431,6 +2527,7 @@ a.button-visually-catalog:active {
 }
 
 .b-popup {
+  display: none;
   padding: 0;
   width:  620px;
   height: 423px;
