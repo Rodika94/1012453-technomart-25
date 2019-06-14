@@ -737,14 +737,16 @@ input[type="radio"].visually-hidden {
 
 .filter-checkbox input[type="checkbox"] + .filter-input-check {
   position: absolute;
-  top: -4px;
+  content: "";
+  background-image: url(../img/checkbox-off.svg); 
+  background-color: #ffffff;
+  background-size: 25px 25px;
+  width: 25px; 
+  height: 25px;
+  cursor: pointer;
+  border: none;
   left: 0;
-
-  width: 21px;
-  height: 21px;
-
-  border: 2px solid #c5c5c5;
-  border-radius: 2px;
+  top: -3px;
 }
 
 .filter-checkbox input[type="checkbox"]:hover + .filter-input-check {
@@ -778,14 +780,16 @@ input[type="radio"].visually-hidden {
 
 .filter-option input[type="radio"] + .filter-input-checked {
   position: absolute;
-  top: -4px;
+  content: "";
+  background-image: url(../img/radio-off.svg); 
+  background-color: #ffffff;
+  background-size: 25px 25px;
+  width: 25px; 
+  height: 25px;
+  cursor: pointer;
+  border: none;
   left: 0;
-
-  width: 21px;
-  height: 21px;
-
-  border: 2px solid #c5c5c5;
-  border-radius: 50%;
+  top: -3px;
 }
 
 .filter-checkbox input[type="radio"]:hover + .filter-input-checked {
@@ -797,8 +801,8 @@ input[type="radio"].visually-hidden {
   content: "";
   background-image: url(../img/radio-on.svg); 
   background-color: #ffffff;
-  background-size: 25px 25px;
-  width: 25px; 
+  background-size: 27px 25px;
+  width: 27px; 
   height: 25px;
   cursor: pointer;
   border: none;
@@ -809,8 +813,8 @@ input[type="radio"].visually-hidden {
   content: "";
   background-image: url(../img/radio-on.svg);
   background-color: #ffffff;
-  background-size: 25px 25px; 
-  width: 25px; 
+  background-size: 27px 25px; 
+  width: 27px; 
   height: 25px;
   border: none;
 }
@@ -977,8 +981,7 @@ button.find-link {
   width: 218px;
   height: 88px;
   padding: 40px 0;
-  
-  background-color: rgba(255,255,255,0.9);
+  background-color: #ffffff;
   z-index: 10;
 }
 
@@ -1174,7 +1177,7 @@ button.find-link {
 }
 
 .span-filter {
-  padding: 9px 18px;
+  padding: 10px 18px;
   padding-bottom: 10px;
   margin: 0;
   margin-bottom: 20px;
@@ -1187,6 +1190,7 @@ button.find-link {
 .catalog-filters {
   display: flex;
   padding: 9px 19px;
+  padding-bottom: 8px;
   margin: 0;
   font-size: 13px;
   margin-bottom: 20px;
@@ -2576,4 +2580,16 @@ button.send-link {
   border-radius: 3px;
   text-transform: uppercase;
   border: none;
+}
+
+.modal-map {
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 940px;
+  height: 446px;
+}
+
+.modal-map p {
+  margin: 0;
 }
